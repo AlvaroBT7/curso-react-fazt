@@ -1,0 +1,36 @@
+:root {
+  --card-width: 50vw;
+  --card-background-color: #212427;
+  --card-border-color: #414447;
+  --card-font-color: #fff;
+}
+
+.card-container {
+  margin: 50px auto;
+  width: var(--card-width);
+  background-color: var(--card-background-color);
+  color: var(--card-font-color);
+  padding: 10px 35px;
+  border-radius: 2px;
+  border: 1px solid var(--card-border-color);
+  box-sizing: border-box;
+  font-family: Tahoma;
+  text-align: center;
+}
+
+.card-container * {
+  padding: 10px;
+  margin: 0;
+}
+
+span.subject {
+  color: #48e;
+}
+
+span.done {
+  color: #4e2;
+}
+
+span.not-done {
+  color: #f00;
+}

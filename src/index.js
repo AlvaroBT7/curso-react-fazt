@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Greeting } from "./components";
+import TaskCard from "./Task";
+
+document.body.style.backgroundColor = "#222731";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
-    <Greeting name="Alvaro" surname="Barrero" age={15}/>
-    <Greeting name="Mauricio" surname="Hernandez" />
+    <TaskCard subject="programming" done={true} />
+    <TaskCard subject="laundry" done={false} />
   </>
 );

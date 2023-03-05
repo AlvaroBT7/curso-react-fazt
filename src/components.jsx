@@ -3,17 +3,13 @@ export const IsBobo = () => {
   return <h1>{isBobo ? "Es bobo" : "No es bobo"}</h1>;
 };
 
-export const User = () => {
-  const user = {
-    name: "Alvaro",
-    surname: "Barrero",
-    age: 15,
-  };
+export const User = ({ name, surname, age, greet }) => {
+  greet(name);
   return (
     <div>
-      <h1>Name: {user.name}</h1>
-      <h1>Surname: {user.surname}</h1>
-      <h1>Age: {user.age}</h1>
+      <h3>Name: {name}</h3>
+      <h3>Surname: {surname}</h3>
+      <h3>Age: {age}</h3>
     </div>
   );
 };
@@ -34,13 +30,14 @@ export const Player = () => {
   );
 };
 
-export const Greeting = ({name, surname, age="No tiene esta propiedad"}) => {
+export const Greeting = ({
+  name,
+  surname,
+  age = "No tiene esta propiedad",
+}) => {
   const message = `Name: ${name}\nSurname: ${surname}\nAge: ${age}`;
   console.log(message);
   return <h2>{message}</h2>;
 };
-
-
-
 
 export default { Greeting, IsBobo, User, Player };
