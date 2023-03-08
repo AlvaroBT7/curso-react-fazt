@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { AiFillCaretRight, AiFillAndroid } from "react-icons/ai";
 
 const Posts = ({ text }) => {
   return (
@@ -16,7 +17,9 @@ const Posts = ({ text }) => {
         }
       }}
     >
+      <AiFillCaretRight />
       {text}
+      <AiFillAndroid />
     </button>
   );
 };
